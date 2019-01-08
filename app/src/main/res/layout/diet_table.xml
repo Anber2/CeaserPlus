@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/diet_table_arr_left"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                app:srcCompat="@drawable/left_arrow2x" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/diet_table_days"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1.04"
+                android:gravity="center"
+                android:text="Sunday" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c0c0c0" />
+
+            <ImageView
+                android:id="@+id/diet_table_arr_right"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                app:srcCompat="@drawable/menu_arrow2x" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:layout_margin="2dp"
+        android:layout_weight="0.89"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/breakfastLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/breakfasttitleLO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/diet_meal_normal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/imageView142"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/icon1" />
+
+                        <View
+                            android:id="@+id/view46"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/bf_textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.00"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="Breakfast"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view47"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/breakfast_imagearrow33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/down_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/breakfastLO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ListView
+                            android:id="@+id/breakfastLV"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:choiceMode="singleChoice" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/soupLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/souptitleLO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/diet_meal_normal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/imageView125"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/icon2" />
+
+                        <View
+                            android:id="@+id/view65"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/SoupTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.00"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="Soup"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view76"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/soup_imagearrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/down_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/soupLO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ListView
+                            android:id="@+id/soupLV"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/saladLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/saladtitleLO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/diet_meal_normal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/imageView1e2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/icon3" />
+
+                        <View
+                            android:id="@+id/view6w"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/textVieww3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.00"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="Salad"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view7w"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/salad_imagearrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/down_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/saladLO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ListView
+                            android:id="@+id/saladLV"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lunchLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lunchtitleLO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/diet_meal_normal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/imageViewf12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/icon4" />
+
+                        <View
+                            android:id="@+id/view6f"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/textViewf3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.00"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="Lunch"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view7h"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/lunch_imagearrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/down_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lunchLO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ListView
+                            android:id="@+id/lunchLV"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DinnerLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/dinnertitleLO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/diet_meal_normal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/imageView12ut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/icon5" />
+
+                        <View
+                            android:id="@+id/viewyy6"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/textVittew3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.00"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="Dinner"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view766"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/dinner_imagearrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/down_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/DinnerLO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ListView
+                            android:id="@+id/DinnerLV"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/snackLO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/snacktitleLO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/diet_meal_normal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/icon6" />
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.00"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="Snack"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view7"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="#c0c0c0" />
+
+                        <ImageView
+                            android:id="@+id/snack_imagearrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/down_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snackLO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ListView
+                            android:id="@+id/snackLV"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn1" />
+
+        <Button
+            android:id="@+id/button_change_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn2"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+</LinearLayout>

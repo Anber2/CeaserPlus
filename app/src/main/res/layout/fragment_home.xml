@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".9"
+            android:adjustViewBounds="true"
+            android:background="@drawable/banner3"
+
+
+            android:gravity="center_vertical|center_horizontal"
+            custom:indicator_visibility="invisible" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:orientation="horizontal"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/offer_title_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:background="@color/status_bar_color"
+                            android:maxLength="50"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="Not Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold" />
+
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:id="@+id/offerImg1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:clickable="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/doctor2x"
+                            custom:siBorderColor="@color/colorBlack"
+                            custom:siBorderWidth="1dp">
+
+                        </com.github.siyamed.shapeimageview.CircularImageView>
+
+                        <TextView
+                            android:id="@+id/offer_desc_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:background="@color/status_bar_color"
+                            android:gravity="right"
+                            android:maxLength="50"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="Not Available"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:id="@+id/offerImg2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="80dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/doctor2x"
+                            custom:siBorderColor="@color/colorBlack"
+                            custom:siBorderWidth="1dp"></com.github.siyamed.shapeimageview.CircularImageView>
+
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:id="@+id/offerImg3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="80dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/doctor2x"
+                            custom:siBorderColor="@color/colorBlack"
+                            custom:siBorderWidth="1dp"></com.github.siyamed.shapeimageview.CircularImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:id="@+id/offerImg4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="110dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/doctor2x"
+                            custom:siBorderColor="@color/colorBlack"
+                            custom:siBorderWidth="1dp"></com.github.siyamed.shapeimageview.CircularImageView>
+
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:id="@+id/offerImg5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="110dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/doctor2x"
+                            custom:siBorderColor="@color/colorBlack"
+                            custom:siBorderWidth="1dp"></com.github.siyamed.shapeimageview.CircularImageView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    custom:srcCompat="@drawable/circle2x" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="90dp"
+                    android:scaleType="fitCenter"
+                    custom:srcCompat="@drawable/doctor3x" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageButton
+                    android:id="@+id/left_nav"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@null"
+                    android:src="@drawable/left_arrow2x"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/right_nav"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/left_nav"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@null"
+                    android:src="@drawable/right_arrow2x"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+
+            android:alpha="0.9"
+            android:background="@android:color/black"
+            android:scrollIndicators="bottom">
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:alpha="0.9"
+                android:background="@drawable/news_banner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/news_title_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:singleLine="true"
+                    android:text="LATEST NEWS "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/news_image"-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:layout_height="120dp"-->
+                    <!--android:layout_marginRight="60dp"-->
+                    <!--android:src="@drawable/doctor2x" />-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.github.siyamed.shapeimageview.DiamondImageView
+                            android:id="@+id/news_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/doctor2x"
+                            custom:siBorderColor="@color/colorWhite"
+                            custom:siBorderWidth="2dp">
+
+                        </com.github.siyamed.shapeimageview.DiamondImageView>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#c0c0c0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/news_date_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/coloritemBackground"
+                            android:text="Not Available"
+                            android:textColor="@color/colorWhite" />
+
+                        <TextView
+                            android:id="@+id/news_desc_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLength="100"
+                            android:text="Not Available"
+                            android:textColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </com.daimajia.slider.library.SliderLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

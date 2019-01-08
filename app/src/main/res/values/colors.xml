@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FFEBCD</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary2">#56B900</color>
+    <color name="colorPrimaryDark2">#289C2B</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="colorPrimaryLight">#84FF19</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDivider">#2FE897</color>
+    <color name="colorBorder">#a7a4a4</color>
+    <color name="colorExtra">#f7f7f1</color>
+    <color name="coloritemBackground">#86744e</color>
+    <color name="status_bar_color">#86744E</color>
+    <color name="tabpackg">#8E5453</color>
+    <color name="tabmenue">#87654C</color>
+    <color name="tabappint">#7E864D</color>
+    <color name="light_black">#999999</color>
+    <color name="Transparent">#00000000</color>
+    <color name="diet_meal_normal">#CD853F</color>
+    <color name="diet_meal_clicked">#86744e</color>
+
+
+    #CD853F
+
+</resources>

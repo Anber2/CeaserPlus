@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.example.hp.ceaserplus.ActivityClasses.OffersPupup"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="164dp"
+
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/offer_img"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/doctor3x">-->
+
+            <!--</ImageView>-->
+
+            <com.github.siyamed.shapeimageview.DiamondImageView
+                android:id="@+id/offer_img"
+                siBorderColor="@color/colorBlack"
+                siBorderWidth="2dp"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/banner3"
+                app:siBorderColor="@color/colorBlack"
+                app:siBorderWidth="2dp">
+
+            </com.github.siyamed.shapeimageview.DiamondImageView>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#c0c0c0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout8"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dp"
+            android:layout_toEndOf="@+id/linearLayout8"
+            android:layout_toRightOf="@+id/linearLayout8"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/offer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Not Available"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/offer_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/status_bar_color"
+                android:text="Not Available"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/offer_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Available" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

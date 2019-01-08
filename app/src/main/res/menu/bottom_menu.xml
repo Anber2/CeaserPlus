@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/menu_home"
+        android:title=""
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/home_profile2x"
+        android:title=""
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_news"
+        android:enabled="true"
+        android:icon="@drawable/menu_news2x"
+        android:title=""
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_contact_us"
+        android:enabled="true"
+        android:icon="@drawable/menu_contact2x"
+        android:title=""
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_menu"
+        android:enabled="true"
+        android:icon="@drawable/menu_more2x"
+        android:title=""
+        app:showAsAction="always"></item>
+
+    <!-- //////////////////////// -->
+
+
+
+
+
+</menu>

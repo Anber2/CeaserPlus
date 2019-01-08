@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diet_bg3x"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:id="@+id/createAccountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="Send Feedback"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#c0c0c0" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/feedFirstNamTXT"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/first_name2x"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="First Name"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/feedLastNameTXT"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/last_name2x"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="Last Name"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/feedCountrySpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/country2x"
+                    android:focusable="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="Country" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/feedCodeNumTXT"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/phcode2x"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="Code"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/feedMobileTXT"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/feedCodeNumTXT"
+                        android:layout_toRightOf="@+id/feedCodeNumTXT"
+                        android:background="@drawable/phnumber2x"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="Mobile"
+                        android:inputType="phone"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/feedAddressTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/address_feed3x"
+
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="Address 1"
+                    android:inputType="textPostalAddress" />
+
+                <EditText
+                    android:id="@+id/feedAddress2TXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/address_feed3x"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="Address 2"
+                    android:inputType="textPostalAddress"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/feedEmailTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/feedAddress2TXT"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/email2x"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/feedCommentTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/feedEmailTXT"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/comment2x"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="Comment"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/feedSubbmitBTN"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/feedCommentTXT"
+                    android:layout_marginTop="20dp"
+                    android:text="SUBMIT"
+                    android:textSize="18sp"
+                    android:background="@drawable/btn_bg"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_vertical|center_horizontal" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

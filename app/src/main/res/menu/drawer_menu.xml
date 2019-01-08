@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:yourapp="http://schemas.android.com/tools">
+
+    <group
+        android:checkableBehavior="single"
+        android:menuCategory="alternative">
+
+        <item
+            android:id="@+id/action_d_about_us"
+            android:checked="false"
+            android:icon="@drawable/aboutus2x"
+            android:title="@string/action_d_about_us" />
+
+        <item
+            android:id="@+id/action_d_mission"
+            android:checked="false"
+            android:icon="@drawable/vision3x"
+            android:title="@string/action_d_mission" />
+
+        <item
+            android:id="@+id/action_d_news"
+            android:checked="false"
+            android:icon="@drawable/news2x"
+            android:title="@string/action_d_news" />
+
+        <item
+            android:id="@+id/action_d_our_clinics"
+            android:checked="false"
+            android:icon="@drawable/ourclient2x"
+            android:title="@string/action_d_our_clinics" />
+
+        <item
+            android:id="@+id/action_d_my_diet"
+            android:checked="false"
+            android:icon="@drawable/diet2x"
+            android:title="@string/action_d_my_diet" />
+
+
+        <item
+            android:id="@+id/action_d_user_profile"
+            android:checked="false"
+            android:icon="@drawable/user2x"
+            android:title="@string/action_d_user_profile" />
+        <item
+            android:id="@+id/action_d_media_gallery"
+            android:checked="false"
+            android:icon="@drawable/media2x"
+            android:title="@string/action_d_media_gallery" />
+        <item
+            android:id="@+id/action_d_faq"
+            android:checked="false"
+            android:icon="@drawable/faq2x"
+            android:title="@string/action_d_faq" />
+
+    </group>
+
+
+</menu>
